@@ -1,0 +1,92 @@
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 0px;
+    grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+}
+
+.item header{
+    font-weight: 500;
+}
+
+.item{
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+}
+
+.header{
+     width: auto;
+     height: 300px;
+     background-image: url(./images/banner\ desktop\ heritage.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     overflow: hidden;
+    grid-area: header;
+}
+
+.sidebar{
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    height: 140vh;
+    grid-area: sidebar;
+    
+}
+
+.sidebar p:hover{
+    background-color: #b6a6df;
+}
+
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    grid-area: content;
+    background-color: rgb(245, 245, 245);
+}
+
+.flex-container div{
+    margin: 5px 0px 0px 50px;
+    text-align: center;
+    
+}
+
+.flex-container img{
+    margin: 0px 0px 0px 1px;
+    border: 5px solid #CDC3E6;
+    width: 22rem;
+    height: 22rem;
+}
+
+.flex-container h2{
+    text-align: center;
+    margin: 5px 0px 5px 0px;
+}
+
+.flex-container p{
+    margin: 5px 0px 0px 0px;
+    background-color: #CDC3E6;
+}
+
+.flex-container p:hover{
+    margin: 5px 0px 0px 0px;
+    background-color: #9476df;
+}
+.footer{
+    grid-area: footer;
+    text-align: center;
+}
